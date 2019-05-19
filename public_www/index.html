@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="application/javascript" src="script.js"></script>
+    <style>
+    #message {
+        display: block;
+        width: 250px;
+        height: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <canvas id="mycanvas" style="background-color: green" width="500" height="500" onclick="setCell(event)" onmousemove="getCoordinates(event)"></canvas>
+            </div>
+            <div class="col">
+                <h1>Game of life</h1>                
+                <p>Select any cells by mouse and click "Start" button.</p>
+                <div id="message"></div>
+                <button class="btn btn-primary" id="mybutton" onclick="startStep()">Start</button>
+                <button class="btn btn-primary" id="cancelbutton" onclick="createGrid()">Clear</button>
+            </div>
+        </div>  
+            
+    </div>
+    
+</body>
+</html>
